@@ -1,6 +1,6 @@
 {
   "name": "meson-build",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": true,
   "description": "Run a Meson task during your Actions workflow",
   "main": "dist/index.js",
