@@ -1,37 +1,42 @@
 {
-    "name": "meson-build",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Run a Meson task during your Actions workflow",
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "tsc",
-        "test": "jest",
-        "release": "ncc build lib/meson-build.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/BSFishy/meson-build.git"
-    },
-    "keywords": [
-        "actions",
-        "node",
-        "setup"
-    ],
-    "author": "BSFishy",
-    "license": "MIT",
-    "dependencies": {
-        "@actions/core": "^1.2.6",
-        "@actions/exec": "^1.0.0",
-        "@actions/io": "^1.0.0"
-    },
-    "devDependencies": {
-        "@types/jest": "^24.0.13",
-        "@types/node": "^12.0.4",
-        "@zeit/ncc": "^0.20.5",
-        "jest": "^24.8.0",
-        "jest-circus": "^24.7.1",
-        "ts-jest": "^24.0.2",
-        "typescript": "^3.5.1"
-    }
+  "name": "meson-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Run a Meson task during your Actions workflow",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "release": "ncc build lib/meson-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BSFishy/meson-build.git"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
+  "author": "BSFishy",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/exec": "^3.0.0",
+    "@actions/io": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^26.6.3",
+    "@vercel/ncc": "^0.45.0",
+    "jest": "^30.5.2",
+    "jest-circus": "^30.5.2",
+    "ts-jest": "^29.4.14",
+    "ts-migrating": "^1.5.0",
+    "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.12.2": true
+  }
 }
