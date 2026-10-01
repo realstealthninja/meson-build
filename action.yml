@@ -2,11 +2,11 @@ name: Meson Build
 author: BSFishy
 description: Run a Meson task during your Actions workflow
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node24"
+  main: "dist/index.js"
 branding:
-  icon: 'arrow-down'
-  color: 'green'
+  icon: "arrow-down"
+  color: "green"
 inputs:
   action:
     description: The action to run
@@ -14,24 +14,24 @@ inputs:
   directory:
     description: The directory to build the project to
     required: true
-    default: 'build'
+    default: "build"
   setup-options:
     description: Additional options to pass to Meson during setup
     required: false
-    default: ''
+    default: ""
   options:
     description: Additional options to pass to Meson
     required: false
-    default: ''
+    default: ""
   meson-version:
     description: The version of Meson to use
     required: true
-    default: '0.53.2'
+    default: "1.12.1"
   ninja-version:
     description: The version of Ninja to use
     required: true
-    default: '1.9.0.post1'
+    default: "1.13.2"
   gcovr-version:
     description: The version of gcovr to use (If doing coverage)
     required: true
-    default: '4.2'
+    default: "8.6"
