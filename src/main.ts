@@ -267,7 +267,7 @@ export async function run() {
 
     core.debug(`Running: ${command} ${args.join(" ")}`);
     await exec.exec(`"${command}"`, args);
-  } catch (err) {
+  } catch (err: any) {
     core.setFailed(err.message);
   }
 }
