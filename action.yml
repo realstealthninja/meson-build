@@ -1,4 +1,4 @@
-name: Meson Build
+name: Build Meson
 author: BSFishy
 description: Run a Meson task during your Actions workflow
 runs:

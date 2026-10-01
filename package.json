@@ -1,5 +1,5 @@
 {
-  "name": "meson-build",
+  "name": "build-meson",
   "version": "1.0.5",
   "private": true,
   "description": "Run a Meson task during your Actions workflow",
