@@ -15,9 +15,9 @@ Basic:
 
 ```yaml
 steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-python@v1
-  - uses: BSFishy/meson-build@v1.0.3
+  - uses: actions/checkout@v7
+  - uses: actions/setup-python@v7
+  - uses: BSFishy/build-meson@v1.0.5
     with:
       action: test
 ```
@@ -25,15 +25,15 @@ steps:
 All options:
 
 ```yaml
-- uses: BSFishy/meson-build@v1.0.3
+- uses: BSFishy/build-meson@v1.0.3
   with:
     action: test
     directory: build
     setup-options: -Db_coverage=true
     options: --verbose
-    meson-version: 0.53.2
-    ninja-version: 1.9.0.post1
-    gcovr-version: 4.2
+    meson-version: 1.12.1
+    ninja-version: 1.13.2
+    gcovr-version: 8.6
 ```
 
 ### Options
